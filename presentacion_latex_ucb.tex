@@ -1,0 +1,57 @@
+\documentclass[11pt]{beamer}
+\usetheme{Boadilla}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\author[Autor1 y Autor2]{Nombre Primer Autor \and Nombre Segundo Autor}
+\title{Mi primer presentación \LaTeX}
+%\setbeamercovered{transparent} 
+\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+\institute[U.C.B.]{Universidad Católica Boliviana ``San Pablo"} 
+\date{\today} 
+\subject{Curso de \LaTeX}
+
+ 
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Contenido}
+\tableofcontents
+\end{frame}
+
+%PRIMER DIAPOSITIVA
+\section{Introducción}
+\begin{frame}{Introducción}
+\onslide<1->{Esta es mi primera presentación BEAMER.}
+\begin{itemize}
+\onslide<2->{\item Este es un primer elemento.}
+\medskip
+\onslide<3->{\item Este es un segundo elemento.}
+\bigskip
+\onslide<4->{\item Este es un tercer elemento.}
+\end{itemize}
+\end{frame}
+
+\section{Ecuaciones}
+\begin{frame}
+$$ log y_i = \beta_0 + \beta_1 edu_i + \beta_2 exp_i + \beta_3 exp^2_i + \varepsilon_i$$
+\end{frame}
+
+\subsection{Ecuaciones especiales}
+\begin{frame}
+$$ log y_i = \beta_0 + \beta_1 edu_i + \beta_2 exp_i + \beta_3 exp^2_i + \varepsilon_i$$
+\end{frame}
+
+\begin{frame}
+$$ log y_i = \beta_0 + \beta_1 edu_i + \beta_2 exp_i + \beta_3 exp^2_i + \varepsilon_i$$
+\end{frame}
+
+\end{document}
